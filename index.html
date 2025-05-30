@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alex Halus | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Language Switcher -->
+  <div class="lang-switcher" style="position: fixed; top: 30px; right: 30px; z-index: 10000;">
+    <button class="lang-btn" data-lang="ua">UA</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="ru">RU</button>
+  </div>
+  <div class="loader-wrapper">
+    <div class="pyramid-loader">
+      <div class="wrapper">
+        <div class="side side1"></div>
+        <div class="side side2"></div>
+        <div class="side side3"></div>
+        <div class="side side4"></div>
+        <div class="shadow"></div>
+      </div>
+    </div>
+    <!-- From Uiverse.io by andrew-demchenk0 --> 
+    <div class="loader">
+      <div data-glitch="Loading..." class="glitch">Loading...</div>
+    </div>
+  </div>
+  <div id="main-content" style="display: block;">
+    <!-- 1. Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-image">
+          <img src="img/r.jpg " alt="Alex Halus" class="profile-photo">
+        </div>
+        <div class="hero-content">
+          <h1 class="hero-name" data-i18n="hero_name">Alex Halus</h1>
+          <p class="hero-description" data-i18n="hero_desc">Фрілансер у веброзробці, який втілює ідеї в життя.</p>
+          <div class="hero-buttons">
+            <button class="btn-primary" onclick="scrollToSection('about')" data-i18n="hero_btn_about">Про мене</button>
+            <button class="btn-secondary" onclick="scrollToSection('portfolio')" data-i18n="hero_btn_portfolio">Портфоліо</button>
+            <button class="btn-accent" onclick="scrollToSection('contacts')" data-i18n="hero_btn_contacts">Зв'язатися</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Про мене -->
+    <section id="about" class="about-section reveal">
+      <div class="container">
+        <h2 class="section-title" data-i18n="about_title">Про мене</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3 data-i18n="about_who">Хто я і звідки</h3>
+            <p data-i18n="about_who_text">Мене звати Алекс, мені 18 років і я живу в Канаді. Сам з України. Студент який захоплюється технологіями та веброзробкою.</p>
+            
+            <h3 data-i18n="about_why">Чому веброзробка?</h3>
+            <p data-i18n="about_why_text">Почав вивчати програмування самостійно через інтернет. Мене захопила можливість створювати щось корисне та красиве, що може допомогти людям.</p>
+            
+            <h3 data-i18n="about_goals">Мої цілі</h3>
+            <p data-i18n="about_goals_text">Стати професійним веб-розробником, допомагати бізнесменам створювати якісні сайти та розвивати свої навички кожен день.</p>
+          </div>
+          <div class="about-goals">
+            <div class="goal-item">
+              <div class="goal-number" data-i18n="about_goal_years">2+</div>
+              <div class="goal-text" data-i18n="about_goal_years_text">роки навчання та практики</div>
+            </div>
+            <div class="goal-item">
+              <div class="goal-number" data-i18n="about_goal_projects">14+</div>
+              <div class="goal-text" data-i18n="about_goal_projects_text">Проектів</div>
+            </div>
+            <div class="goal-item">
+              <div class="goal-number" data-i18n="about_goal_motivation">∞</div>
+              <div class="goal-text" data-i18n="about_goal_motivation_text">Мотивації</div>
+            </div>
+           
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Навички -->
+    <section id="skills" class="skills-section reveal">
+      <div class="container">
+        <h2 class="section-title" data-i18n="skills_title">Мої навички</h2>
+        <div class="skills-grid">
+          <!-- HTML -->
+          <div class="skill-item">
+            <div class="skill-icon">🌐</div>
+            <h3 data-i18n="skill_html">HTML</h3>
+            <div class="skill-bar arrow-bar">
+              <div class="arrow-progress" style="width: 90%;">
+                <span class="arrow"></span>
+              </div>
+            </div>
+            <div class="skill-percent" data-i18n="skill_html_percent">90%</div>
+          </div>
+          <!-- CSS -->
+          <div class="skill-item">
+            <div class="skill-icon">🎨</div>
+            <h3 data-i18n="skill_css">CSS</h3>
+            <div class="skill-bar arrow-bar">
+              <div class="arrow-progress" style="width: 70%;">
+                <span class="arrow"></span>
+              </div>
+            </div>
+            <div class="skill-percent" data-i18n="skill_css_percent">70%</div>
+          </div>
+          <!-- Дизайн -->
+          <div class="skill-item">
+            <div class="skill-icon">🖌️</div>
+            <h3 data-i18n="skill_design">Дизайн</h3>
+            <div class="skill-bar arrow-bar">
+              <div class="arrow-progress" style="width: 100%;">
+                <span class="arrow"></span>
+              </div>
+            </div>
+            <div class="skill-percent" data-i18n="skill_design_percent">100%</div>
+          </div>
+          <!-- Python -->
+          <div class="skill-item">
+            <div class="skill-icon">🐍</div>
+            <h3 data-i18n="skill_python">Python</h3>
+            <div class="skill-bar arrow-bar">
+              <div class="arrow-progress" style="width: 30%;">
+                <span class="arrow"></span>
+              </div>
+            </div>
+            <div class="skill-percent" data-i18n="skill_python_percent">30%</div>
+          </div>
+          <!-- PowerPoint -->
+          <div class="skill-item">
+            <div class="skill-icon">📊</div>
+            <h3 data-i18n="skill_powerpoint">PowerPoint</h3>
+            <div class="skill-bar arrow-bar">
+              <div class="arrow-progress" style="width: 60%;">
+                <span class="arrow"></span>
+              </div>
+            </div>
+            <div class="skill-percent" data-i18n="skill_powerpoint_percent">60%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Портфоліо -->
+    <section id="portfolio" class="portfolio-section reveal">
+      <div class="container">
+        <h2 class="section-title" data-i18n="portfolio_title">Портфоліо</h2>
+        <div class="portfolio-grid">
+          <!-- K-Drama for you -->
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <a href="https://workalx.github.io/K-Drama-for-you.com/index.html" target="_blank">
+                <img src="https://lingopie.com/blog/content/images/size/w1000/2023/08/image-44.jpeg" alt="K-Drama for you">
+              </a>
+            </div>
+            <div class="portfolio-content">
+              <h3 data-i18n="portfolio1_title">K-Drama for you</h3>
+              <p data-i18n="portfolio1_desc">Сучасний сайт корейських фільмів з адаптивним дизайном</p>
+              <a href="https://workalx.github.io/K-Drama-for-you.com/index.html" target="_blank" class="btn-details" data-i18n="portfolio1_btn">Перейти на сайт</a>
+            </div>
+          </div>
+          <!-- Anime World -->
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <a href="https://workalx.github.io/AnimeWorld.com/" target="_blank">
+                <img src="img/k.jpg" alt="Anime World">
+              </a>
+            </div>
+            <div class="portfolio-content">
+              <h3 data-i18n="portfolio2_title">Anime World</h3>
+              <p data-i18n="portfolio2_desc">Сторінка для перегляду аніме.<br>
+              <b>Фермерська життя в іншому світі</b> з озвучкою на російській мові.</p>
+              <a href="https://workalx.github.io/AnimeWorld.com/" target="_blank" class="btn-details" data-i18n="portfolio2_btn">Перейти на сайт</a>
+            </div>
+          </div>
+          <!-- Dental-technician -->
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <a href="https://workalx.github.io/Dental-technician-new-smile/index.html" target="_blank">
+                <img src="img/L.jpg" alt="Dental-technician">
+              </a>
+            </div>
+            <div class="portfolio-content">
+              <h3 data-i18n="portfolio3_title">Dental-technician</h3>
+              <p data-i18n="portfolio3_desc">Приватний сайт-портфоліо для техніка-стоматолога</p>
+              <a href="https://workalx.github.io/Dental-technician-new-smile/index.html" target="_blank" class="btn-details" data-i18n="portfolio3_btn">Перейти на сайт</a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img src="img/m.jpg" alt="AsScreen Prodaction">
+            </div>
+            <div class="portfolio-content">
+              <h3 data-i18n="portfolio4_title">AsScreen Prodaction</h3>
+              <p data-i18n="portfolio4_desc">Canva-презентація мого дизайнерського проекту для вичення мови програмування Python</p>
+              <a href="https://www.canva.com/design/DAGiey8HrOI/mutg1oDOt2KvIImXjvZYNw/edit" target="_blank" class="btn-details" data-i18n="portfolio4_btn">Перейти на сайт</a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img src="img/m.jpg" alt="AsScreen Prodaction">
+            </div>
+            <div class="portfolio-content">
+              <h3 data-i18n="portfolio5_title">AsScreen Prodaction</h3>
+              <p data-i18n="portfolio5_desc">Веб-сайт для вичення мови програмування Python з адаптивним дизайном</p>
+              <a href="https://workalx.github.io/AsSkreenProdaction/" target="_blank" class="btn-details" data-i18n="portfolio5_btn">Перейти на сайт</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Послуги -->
+    <section id="services" class="services-section reveal">
+      <div class="container">
+        <h2 class="section-title" data-i18n="services_title">Послуги</h2>
+        <div class="services-grid">
+          <div class="service-item">
+            <div class="service-icon">💻</div>
+            <h3 data-i18n="service_web">Розробка сайтів</h3>
+            <p data-i18n="service_web_desc">Створення сучасних та функціональних веб-сайтів</p>
+            <div class="service-price" data-i18n="service_web_price">від $200</div>
+            <button class="btn-order" onclick="scrollToSection('contacts')" data-i18n="service_web_btn">Замовити</button>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">🎯</div>
+            <h3 data-i18n="service_design">Дизайн презентацій</h3>
+            <p data-i18n="service_design_desc">Професійні презентації для бізнесу та освіти</p>
+            <div class="service-price" data-i18n="service_design_price">від $50</div>
+            <button class="btn-order" onclick="scrollToSection('contacts')" data-i18n="service_design_btn">Замовити</button>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">✍️</div>
+            <h3 data-i18n="service_copy">Копірайтинг</h3>
+            <p data-i18n="service_copy_desc">Тексти для сайтів та маркетингових матеріалів ( на жаль, тільки українська мова)</p>
+            <div class="service-price" data-i18n="service_copy_price">від $30</div>
+            <button class="btn-order" onclick="scrollToSection('contacts')" data-i18n="service_copy_btn">Замовити</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Як я працюю -->
+    <section id="process" class="process-section reveal">
+      <div class="container">
+        <h2 class="section-title" data-i18n="process_title">Як я працюю</h2>
+        <div class="process-steps">
+          <div class="step-item">
+            <div class="step-number" data-i18n="process_1_num">1</div>
+            <div class="step-content">
+              <h3 data-i18n="process_1">Зв'язок</h3>
+              <p data-i18n="process_1_desc">Обговорюємо ваші потреби та бачення проекту</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number" data-i18n="process_2_num">2</div>
+            <div class="step-content">
+              <h3 data-i18n="process_2">Планування</h3>
+              <p data-i18n="process_2_desc">Створюю план роботи та узгоджую деталі</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number" data-i18n="process_3_num">3</div>
+            <div class="step-content">
+              <h3 data-i18n="process_3">Створення</h3>
+              <p data-i18n="process_3_desc">Розробляю проект з постійним зворотним зв'язком</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number" data-i18n="process_4_num">4</div>
+            <div class="step-content">
+              <h3 data-i18n="process_4">Результат</h3>
+              <p data-i18n="process_4_desc">Передаю готовий проект та надаю підтримку</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Відгуки -->
+    <section id="reviews" class="reviews-section reveal">
+      <div class="container">
+        <h2 class="section-title" data-i18n="reviews_title">Що кажуть про мою роботу</h2>
+        <p class="reviews-subtitle" data-i18n="reviews_subtitle">Друзі та співробітники про мої проекти</p>
+        <div class="reviews-grid">
+          <div class="review-item">
+            <div class="review-text" data-i18n="review1">"Алекс створив чудовий сайт для нашого проекту. Професійно та в строк!"</div>
+            <div class="review-author" data-i18n="review1_author">- Марія К., дизайнер</div>
+          </div>
+          <div class="review-item">
+            <div class="review-text" data-i18n="review2">"Презентація вийшла просто супер! Всі були в захваті від дизайну."</div>
+            <div class="review-author" data-i18n="review2_author">- Олег П., студент</div>
+          </div>
+          <div class="review-item">
+            <div class="review-text" data-i18n="review3">"Швидко, якісно та з розумінням потреб. Рекомендую!"</div>
+            <div class="review-author" data-i18n="review3_author">- Анна Л., викладач</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. FAQ -->
+    <section id="faq" class="faq-section reveal">
+      <div class="container">
+        <h2 class="section-title" data-i18n="faq_title">Часті запитання</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-question" data-i18n="faq1_q">Скільки часу займає створення сайту?</div>
+            <div class="faq-answer" data-i18n="faq1_a">Залежно від складності - від 3 до 14 днів. Прості лендинги - 3-5 днів, корпоративні сайти - 7-14 днів.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" data-i18n="faq2_q">Чи працюєте ви по передоплаті?</div>
+            <div class="faq-answer" data-i18n="faq2_a">Так, зазвичай 50% передоплата на початку проекту, решта - після завершення.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" data-i18n="faq3_q">Чи можете допомогти з текстами?</div>
+            <div class="faq-answer" data-i18n="faq3_a">Звичайно! Надаю послуги копірайтингу та можу допомогти з написанням текстів для сайту.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Контакти -->
+    <section id="contacts" class="contacts-section reveal">
+      <div class="container">
+        <h2 class="section-title" data-i18n="contacts_title">Зв'язатися зі мною</h2>
+        <div class="contacts-content">
+          <div class="contact-form">
+            <form id="contactForm" action="https://formspree.io/f/mvgrpgnl" method="POST">
+              <div class="form-group">
+                <label for="name" data-i18n="contact_name">Ваше ім'я</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email" data-i18n="contact_email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message" data-i18n="contact_message">Повідомлення</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn-submit" data-i18n="contact_btn">Надіслати</button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div data-i18n="contact_email_value">alexwork201006@gmail.com</div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📱</div>
+              <div data-i18n="contact_phone">+1 (306) 280-8898</div>
+            </div>
+            <div class="social-links">
+              <a href="https://t.me/sanjakh" class="social-link" data-i18n="contact_telegram">📱 Telegram</a>
+              <a href="https://www.instagram.com/oleksandr.khalus?igsh=MW5wNTZwbmw1am9tOA==" class="social-link" target="_blank" style="display: flex; align-items: center; gap: 6px;" data-i18n="contact_instagram">
+                <span style="display:inline-block; width: 1.2em; height: 1.2em; vertical-align: middle;">
+                  <svg viewBox="0 0 448 512" width="100%" height="100%" fill="#E4405F" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 114.9-51.3 114.9-114.9S287.7 141 224.1 141zm0 186c-39.5 0-71.5-32-71.5-71.5s32-71.5 71.5-71.5 71.5 32 71.5 71.5-32 71.5-71.5 71.5zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.3-9.9-66.7-36.2-92.9S388.6 1.7 353.3 0C317.7-1.7 130.3-1.7 94.7 0 59.4 1.7 28 9.9 1.7 36.2S1.7 123.4 0 158.7c-1.7 35.6-1.7 223 0 258.6 1.7 35.3 9.9 66.7 36.2 92.9s57.6 34.5 92.9 36.2c35.6 1.7 223 1.7 258.6 0 35.3-1.7 66.7-9.9 92.9-36.2s34.5-57.6 36.2-92.9c1.7-35.6 1.7-223 0-258.6zM398.8 388c-7.8 19.6-22.9 34.7-42.5 42.5-29.4 11.7-99.2 9-132.3 9s-102.9 2.6-132.3-9c-19.6-7.8-34.7-22.9-42.5-42.5-11.7-29.4-9-99.2-9-132.3s-2.6-102.9 9-132.3c7.8-19.6 22.9-34.7 42.5-42.5C121.1 9 190.9 11.6 224 11.6s102.9-2.6 132.3 9c19.6 7.8 34.7 22.9 42.5 42.5 11.7 29.4 9 99.2 9 132.3s2.6 102.9-9 132.3z"/>
+                  </svg>
+                </span>
+                Instagram
+              </a>
+              <a href="https://www.snapchat.com/add/asasin2gredo?share_id=rVJREvr7VdY&locale=ru-RU" class="social-link" target="_blank" style="display: flex; align-items: center; gap: 6px;" data-i18n="contact_snapchat">
+                <span style="display:inline-block; width: 1.7em; height: 1.7em; vertical-align: middle;">
+                  <svg viewBox="0 0 48 48" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="24" fill="#FFFC00"/>
+                    <path d="M24 13c-3.5 0-6.5 2.7-6.5 6.5 0 2.2 1.2 4.2 3.1 5.3-.1.2-.1.4-.1.6 0 1.2 1 2.2 2.2 2.2.4 0 .8-.1 1.1-.3.3.2.7.3 1.1.3 1.2 0 2.2-1 2.2-2.2 0-.2 0-.4-.1-.6 1.9-1.1 3.1-3.1 3.1-5.3C30.5 15.7 27.5 13 24 13zm-2.2 13.7c-.6 0-1.1.5-1.1 1.1v1.7c0 .6.5 1.1 1.1 1.1h4.4c.6 0 1.1-.5 1.1-1.1v-1.7c0-.6-.5-1.1-1.1-1.1h-4.4zm-5.8 3.9c-.3 0-.6.2-.6.6v1.1c0 .3.2.6.6.6h17.6c.3 0 .6-.2.6-.6v-1.1c0-.3-.2-.6-.6-.6H16zm-2.9 3.3c-.3 0-.6.2-.6.6v1.1c0 .3.2.6.6.6h21.8c.3 0 .6-.2.6-.6v-1.1c0-.3-.2-.6-.6-.6H13.1z" fill="#000" stroke="#fff" stroke-width="0.7"/>
+                  </svg>
+                </span>
+                Snapchat
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+    <script>
+        // Smooth scroll to section
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+
+        // Reveal animation on scroll
+        function revealOnScroll() {
+            const reveals = document.querySelectorAll(".reveal");
+            const windowHeight = window.innerHeight;
+            const elementVisible = 150;
+            reveals.forEach(el => {
+                const elementTop = el.getBoundingClientRect().top;
+                if (elementTop < windowHeight - elementVisible) {
+                    el.classList.add("active");
+                }
+            });
+        }
+
+        // FAQ toggle
+        function initFAQ() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                });
+            });
+        }
+
+        // Skill progress animation
+        function animateSkillBars() {
+            const skillBars = document.querySelectorAll('.skill-progress');
+            skillBars.forEach(bar => {
+                const width = bar.getAttribute('data-width');
+                bar.style.width = width;
+            });
+        }
+
+        // Contact form submission
+        function initContactForm() {
+            const form = document.getElementById('contactForm');
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Дякую за повідомлення! Я зв\'яжуся з вами найближчим часом.');
+                form.reset();
+            });
+        }
+
+        // i18n translations
+        const translations = {
+          ua: {
+            hero_name: "Alex Halus",
+            hero_desc: "Фрілансер у веброзробці, який втілює ідеї в життя.",
+            hero_btn_about: "Про мене",
+            hero_btn_portfolio: "Портфоліо",
+            hero_btn_contacts: "Зв'язатися",
+            about_title: "Про мене",
+            about_who: "Хто я і звідки",
+            about_who_text: "Мене звати Алекс, мені 18 років і я живу в Канаді. Сам з України. Студент який захоплюється технологіями та веброзробкою.",
+            about_why: "Чому веброзробка?",
+            about_why_text: "Почав вивчати програмування самостійно через інтернет. Мене захопила можливість створювати щось корисне та красиве, що може допомогти людям.",
+            about_goals: "Мої цілі",
+            about_goals_text: "Стати професійним веб-розробником, допомагати бізнесменам створювати якісні сайти та розвивати свої навички кожен день.",
+            about_goal_years: "2+",
+            about_goal_years_text: "роки навчання та практики",
+            about_goal_projects: "14+",
+            about_goal_projects_text: "Проектів",
+            about_goal_motivation: "∞",
+            about_goal_motivation_text: "Мотивації",
+            skills_title: "Мої навички",
+            skill_html: "HTML",
+            skill_html_percent: "90%",
+            skill_css: "CSS",
+            skill_css_percent: "70%",
+            skill_design: "Дизайн",
+            skill_design_percent: "100%",
+            skill_python: "Python",
+            skill_python_percent: "30%",
+            skill_powerpoint: "PowerPoint",
+            skill_powerpoint_percent: "60%",
+            portfolio_title: "Портфоліо",
+            portfolio1_title: "K-Drama for you",
+            portfolio1_desc: "Сучасний сайт корейських фільмів з адаптивним дизайном",
+            portfolio1_btn: "Перейти на сайт",
+            portfolio2_title: "Anime World",
+            portfolio2_desc: "Сторінка для перегляду аніме.<br><b>Фермерська життя в іншому світі</b> з озвучкою на російській мові.",
+            portfolio2_btn: "Перейти на сайт",
+            portfolio3_title: "Dental-technician",
+            portfolio3_desc: "Приватний сайт-портфоліо для техніка-стоматолога",
+            portfolio3_btn: "Перейти на сайт",
+            portfolio4_title: "AsScreen Prodaction",
+            portfolio4_desc: "Canva-презентація мого дизайнерського проекту для вичення мови програмування Python",
+            portfolio4_btn: "Перейти на сайт",
+            portfolio5_title: "AsScreen Prodaction",
+            portfolio5_desc: "Веб-сайт для вичення мови програмування Python з адаптивним дизайном",
+            portfolio5_btn: "Перейти на сайт",
+            services_title: "Послуги",
+            service_web: "Розробка сайтів",
+            service_web_desc: "Створення сучасних та функціональних веб-сайтів",
+            service_web_price: "від $200",
+            service_web_btn: "Замовити",
+            service_design: "Дизайн презентацій",
+            service_design_desc: "Професійні презентації для бізнесу та освіти",
+            service_design_price: "від $50",
+            service_design_btn: "Замовити",
+            service_copy: "Копірайтинг",
+            service_copy_desc: "Тексти для сайтів та маркетингових матеріалів ( на жаль, тільки українська мова)",
+            service_copy_price: "від $30",
+            service_copy_btn: "Замовити",
+            process_title: "Як я працюю",
+            process_1_num: "1",
+            process_1: "Зв'язок",
+            process_1_desc: "Обговорюємо ваші потреби та бачення проекту",
+            process_2_num: "2",
+            process_2: "Планування",
+            process_2_desc: "Створюю план роботи та узгоджую деталі",
+            process_3_num: "3",
+            process_3: "Створення",
+            process_3_desc: "Розробляю проект з постійним зворотним зв'язком",
+            process_4_num: "4",
+            process_4: "Результат",
+            process_4_desc: "Передаю готовий проект та надаю підтримку",
+            reviews_title: "Що кажуть про мою роботу",
+            reviews_subtitle: "Друзі та співробітники про мої проекти",
+            review1: "\"Алекс створив чудовий сайт для нашого проекту. Професійно та в строк!\"",
+            review1_author: "- Марія К., дизайнер",
+            review2: "\"Презентація вийшла просто супер! Всі були в захваті від дизайну.\"",
+            review2_author: "- Олег П., студент",
+            review3: "\"Швидко, якісно та з розумінням потреб. Рекомендую!\"",
+            review3_author: "- Анна Л., викладач",
+            faq_title: "Часті запитання",
+            faq1_q: "Скільки часу займає створення сайту?",
+            faq1_a: "Залежно від складності - від 3 до 14 днів. Прості лендинги - 3-5 днів, корпоративні сайти - 7-14 днів.",
+            faq2_q: "Чи працюєте ви по передоплаті?",
+            faq2_a: "Так, зазвичай 50% передоплата на початку проекту, решта - після завершення.",
+            faq3_q: "Чи можете допомогти з текстами?",
+            faq3_a: "Звичайно! Надаю послуги копірайтингу та можу допомогти з написанням текстів для сайту.",
+            contacts_title: "Зв'язатися зі мною",
+            contact_name: "Ваше ім'я",
+            contact_email: "Email",
+            contact_message: "Повідомлення",
+            contact_btn: "Надіслати",
+            contact_email_value: "alexwork201006@gmail.com",
+            contact_phone: "+1 (306) 280-8898",
+            contact_telegram: "📱 Telegram",
+            contact_instagram: "Instagram",
+            contact_snapchat: "Snapchat"
+          },
+          en: {
+            hero_name: "Alex Halus",
+            hero_desc: "Freelance web developer bringing ideas to life.",
+            hero_btn_about: "About Me",
+            hero_btn_portfolio: "Portfolio",
+            hero_btn_contacts: "Contact",
+            about_title: "About Me",
+            about_who: "Who I am and where I'm from",
+            about_who_text: "My name is Alex, I'm 18 years old and I live in Canada. Originally from Ukraine. A student passionate about technology and web development.",
+            about_why: "Why web development?",
+            about_why_text: "I started learning programming on my own through the internet. I was fascinated by the ability to create something useful and beautiful that can help people.",
+            about_goals: "My Goals",
+            about_goals_text: "To become a professional web developer, help entrepreneurs create quality websites, and improve my skills every day.",
+            about_goal_years: "2+",
+            about_goal_years_text: "years of learning and practice",
+            about_goal_projects: "14+",
+            about_goal_projects_text: "Projects",
+            about_goal_motivation: "∞",
+            about_goal_motivation_text: "Motivation",
+            skills_title: "My Skills",
+            skill_html: "HTML",
+            skill_html_percent: "90%",
+            skill_css: "CSS",
+            skill_css_percent: "70%",
+            skill_design: "Design",
+            skill_design_percent: "100%",
+            skill_python: "Python",
+            skill_python_percent: "30%",
+            skill_powerpoint: "PowerPoint",
+            skill_powerpoint_percent: "60%",
+            portfolio_title: "Portfolio",
+            portfolio1_title: "K-Drama for you",
+            portfolio1_desc: "Modern Korean movie website with responsive design",
+            portfolio1_btn: "Visit site",
+            portfolio2_title: "Anime World",
+            portfolio2_desc: "Page for watching anime.<br><b>Farming Life in Another World</b> with Russian voiceover.",
+            portfolio2_btn: "Visit site",
+            portfolio3_title: "Dental-technician",
+            portfolio3_desc: "Private portfolio website for a dental technician",
+            portfolio3_btn: "Visit site",
+            portfolio4_title: "AsScreen Prodaction",
+            portfolio4_desc: "Canva-presentation of my design project for learning Python programming language",
+            portfolio4_btn: "Visit site",
+            portfolio5_title: "AsScreen Prodaction",
+            portfolio5_desc: "Website for learning Python programming language with responsive design",
+            portfolio5_btn: "Visit site",
+            services_title: "Services",
+            service_web: "Website Development",
+            service_web_desc: "Creation of modern and functional websites",
+            service_web_price: "from $200",
+            service_web_btn: "Order",
+            service_design: "Presentation Design",
+            service_design_desc: "Professional presentations for business and education",
+            service_design_price: "from $50",
+            service_design_btn: "Order",
+            service_copy: "Copywriting",
+            service_copy_desc: "Texts for websites and marketing materials (unfortunately, only in Ukrainian)",
+            service_copy_price: "from $30",
+            service_copy_btn: "Order",
+            process_title: "How I work",
+            process_1_num: "1",
+            process_1: "Contact",
+            process_1_desc: "We discuss your needs and project vision",
+            process_2_num: "2",
+            process_2: "Planning",
+            process_2_desc: "I create a work plan and agree on the details",
+            process_3_num: "3",
+            process_3: "Creation",
+            process_3_desc: "I develop the project with constant feedback",
+            process_4_num: "4",
+            process_4: "Result",
+            process_4_desc: "I deliver the finished project and provide support",
+            reviews_title: "What people say about my work",
+            reviews_subtitle: "Friends and colleagues about my projects",
+            review1: "\"Alex created a great website for our project. Professional and on time!\"",
+            review1_author: "- Maria K., designer",
+            review2: "\"The presentation turned out just super! Everyone was delighted with the design.\"",
+            review2_author: "- Oleg P., student",
+            review3: "\"Fast, high-quality and with understanding of needs. I recommend!\"",
+            review3_author: "- Anna L., teacher",
+            faq_title: "Frequently Asked Questions",
+            faq1_q: "How long does it take to create a website?",
+            faq1_a: "Depending on complexity - from 3 to 14 days. Simple landing pages - 3-5 days, corporate sites - 7-14 days.",
+            faq2_q: "Do you work with prepayment?",
+            faq2_a: "Yes, usually 50% prepayment at the start of the project, the rest - after completion.",
+            faq3_q: "Can you help with texts?",
+            faq3_a: "Of course! I provide copywriting services and can help with writing texts for the site.",
+            contacts_title: "Contact me",
+            contact_name: "Your name",
+            contact_email: "Email",
+            contact_message: "Message",
+            contact_btn: "Send",
+            contact_email_value: "alexwork201006@gmail.com",
+            contact_phone: "+1 (306) 280-8898",
+            contact_telegram: "📱 Telegram",
+            contact_instagram: "Instagram",
+            contact_snapchat: "Snapchat"
+          },
+          ru: {
+            hero_name: "Alex Halus",
+            hero_desc: "Фрилансер в веб-разработке, воплощающий идеи в жизнь.",
+            hero_btn_about: "Обо мне",
+            hero_btn_portfolio: "Портфолио",
+            hero_btn_contacts: "Связаться",
+            about_title: "Обо мне",
+            about_who: "Кто я и откуда",
+            about_who_text: "Меня зовут Алекс, мне 18 лет и я живу в Канаде. Сам из Украины. Студент, который увлекается технологиями и веб-разработкой.",
+            about_why: "Почему веб-разработка?",
+            about_why_text: "Начал изучать программирование самостоятельно через интернет. Меня увлекла возможность создавать что-то полезное и красивое, что может помочь людям.",
+            about_goals: "Мои цели",
+            about_goals_text: "Стать профессиональным веб-разработчиком, помогать бизнесменам создавать качественные сайты и развивать свои навыки каждый день.",
+            about_goal_years: "2+",
+            about_goal_years_text: "года обучения и практики",
+            about_goal_projects: "14+",
+            about_goal_projects_text: "Проектов",
+            about_goal_motivation: "∞",
+            about_goal_motivation_text: "Мотивации",
+            skills_title: "Мои навыки",
+            skill_html: "HTML",
+            skill_html_percent: "90%",
+            skill_css: "CSS",
+            skill_css_percent: "70%",
+            skill_design: "Дизайн",
+            skill_design_percent: "100%",
+            skill_python: "Python",
+            skill_python_percent: "30%",
+            skill_powerpoint: "PowerPoint",
+            skill_powerpoint_percent: "60%",
+            portfolio_title: "Портфолио",
+            portfolio1_title: "K-Drama for you",
+            portfolio1_desc: "Современный сайт корейских фильмов с адаптивным дизайном",
+            portfolio1_btn: "Перейти на сайт",
+            portfolio2_title: "Anime World",
+            portfolio2_desc: "Страница для просмотра аниме.<br><b>Фермерская жизнь в ином мире</b> с озвучкой на русском языке.",
+            portfolio2_btn: "Перейти на сайт",
+            portfolio3_title: "Dental-technician",
+            portfolio3_desc: "Частный сайт-портфолио для техника-стоматолога",
+            portfolio3_btn: "Перейти на сайт",
+            portfolio4_title: "AsScreen Prodaction",
+            portfolio4_desc: "Canva-презентация моего дизайнерского проекта для изучения языка программирования Python",
+            portfolio4_btn: "Перейти на сайт",
+            portfolio5_title: "AsScreen Prodaction",
+            portfolio5_desc: "Веб-сайт для изучения языка программирования Python с адаптивным дизайном",
+            portfolio5_btn: "Перейти на сайт",
+            services_title: "Услуги",
+            service_web: "Разработка сайтов",
+            service_web_desc: "Создание современных и функциональных веб-сайтов",
+            service_web_price: "от $200",
+            service_web_btn: "Заказать",
+            service_design: "Дизайн презентаций",
+            service_design_desc: "Профессиональные презентации для бизнеса и образования",
+            service_design_price: "от $50",
+            service_design_btn: "Заказать",
+            service_copy: "Копирайтинг",
+            service_copy_desc: "Тексты для сайтов и маркетинговых материалов (к сожалению, только на украинском языке)",
+            service_copy_price: "от $30",
+            service_copy_btn: "Заказать",
+            process_title: "Как я работаю",
+            process_1_num: "1",
+            process_1: "Связь",
+            process_1_desc: "Обсуждаем ваши потребности и видение проекта",
+            process_2_num: "2",
+            process_2: "Планирование",
+            process_2_desc: "Создаю план работы и согласовываю детали",
+            process_3_num: "3",
+            process_3: "Создание",
+            process_3_desc: "Разрабатываю проект с постоянной обратной связью",
+            process_4_num: "4",
+            process_4: "Результат",
+            process_4_desc: "Передаю готовый проект и предоставляю поддержку",
+            reviews_title: "Что говорят о моей работе",
+            reviews_subtitle: "Друзья и коллеги о моих проектах",
+            review1: "\"Алекс создал отличный сайт для нашего проекта. Профессионально и в срок!\"",
+            review1_author: "- Мария К., дизайнер",
+            review2: "\"Презентация получилась просто супер! Все были в восторге от дизайна.\"",
+            review2_author: "- Олег П., студент",
+            review3: "\"Быстро, качественно и с пониманием потребностей. Рекомендую!\"",
+            review3_author: "- Анна Л., преподаватель",
+            faq_title: "Часто задаваемые вопросы",
+            faq1_q: "Сколько времени занимает создание сайта?",
+            faq1_a: "В зависимости от сложности - от 3 до 14 дней. Простые лендинги - 3-5 дней, корпоративные сайты - 7-14 дней.",
+            faq2_q: "Работаете ли вы по предоплате?",
+            faq2_a: "Да, обычно 50% предоплата в начале проекта, остальное - после завершения.",
+            faq3_q: "Можете помочь с текстами?",
+            faq3_a: "Конечно! Предоставляю услуги копирайтинга и могу помочь с написанием текстов для сайта.",
+            contacts_title: "Связаться со мной",
+            contact_name: "Ваше имя",
+            contact_email: "Email",
+            contact_message: "Сообщение",
+            contact_btn: "Отправить",
+            contact_email_value: "alexwork201006@gmail.com",
+            contact_phone: "+1 (306) 280-8898",
+            contact_telegram: "📱 Telegram",
+            contact_instagram: "Instagram",
+            contact_snapchat: "Snapchat"
+          }
+        };
+
+        function setLanguage(lang) {
+          localStorage.setItem('lang', lang);
+          document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (translations[lang][key]) {
+              el.innerHTML = translations[lang][key];
+            }
+          });
+          document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+          });
+        }
+
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            setLanguage(btn.getAttribute('data-lang'));
+          });
+        });
+
+        // Встановити мову при завантаженні
+        window.addEventListener('DOMContentLoaded', () => {
+          const lang = localStorage.getItem('lang') || 'ua';
+          setLanguage(lang);
+        });
+
+        // Initialize everything
+        window.addEventListener("scroll", revealOnScroll);
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                document.querySelector('.loader-wrapper').style.display = 'none';
+                document.getElementById('main-content').style.display = 'block';
+                revealOnScroll();
+                animateSkillBars();
+            }, 5000);
+            initFAQ();
+        });
+    </script>
+</body>
+</html>
